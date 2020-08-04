@@ -1,0 +1,31 @@
+.menu{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1;
+}
+
+.menu .toggle{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 2;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+.menu .hamburger{
+    position: absolute;
+    top: 0;
+    left:  0;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    /* background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+}
