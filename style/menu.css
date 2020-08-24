@@ -188,7 +188,7 @@ nav{
     .nav-links{
         position: fixed;
         height: 100vh;
-        background-color: rgba(255, 255, 255, 0.911);
+        background-color: rgba(255, 255, 255, 0.747);
         width: 100%;
         flex-direction: column;
         justify-content: center;
