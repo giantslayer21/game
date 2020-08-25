@@ -22,10 +22,18 @@ li{
 }
 
 .logo img{
-    /* width: 150px; */
+    /* width: 200px; */
     height: 100%;
     color: #333533;
-    margin: 0 3%;
+    margin: 1% 3%;
+    transition: all 0.5s ease;
+}
+.logo img.small{
+    /* width: 150px; */
+    height: 90%;
+    color: #333533;
+    margin: 1% 3%;
+    transition: all 0.5s ease;
 }
 
 nav{
@@ -125,7 +133,15 @@ nav{
 
 @media screen and (max-width: 768px){
     .logo img{
-        width: 130px;
+        height: 100%;
+        margin: 2% 3%;
+    }
+    .logo img.small{
+        /* width: 150px; */
+        height: 80%;
+        color: #333533;
+        margin: 3% 3%;
+        transition: all 0.5s ease;
     }
     .line1{
         width:27px;

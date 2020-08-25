@@ -6,7 +6,7 @@ const line3 =document.querySelector('.line3');
 const x =document.querySelector('.x');
 const scrollToTop =document.querySelector('.scroll-to-top');
 const navlinks =document.querySelector('.nav-links');
-
+const logo= document.querySelector('.logo img')
 const links = document.querySelectorAll('.nav-links li');
 
 hamburger.addEventListener('click',()=>{
@@ -28,12 +28,18 @@ hamburger.addEventListener('click',()=>{
 window.addEventListener("scroll", scrollFunction);
 
 function scrollFunction() {
-  if (window.pageYOffset > 300) { // Show scrollToTop
-    scrollToTop.style.display = "block";
-  }
-  else { // Hide scrollToTop
+    if (window.pageYOffset > 40) { // Show scrollToTop
+        logo.classList.add('small');
+      }
+      else { // Hide scrollToTop
+        logo.classList.remove('small');
+      }
+    if (window.pageYOffset > 300) { // Show scrollToTop
+        scrollToTop.style.display = "block";
+    }
+    else { // Hide scrollToTop
         scrollToTop.style.display = "none";
-  }
+    }
 }
 
 scrollToTop.addEventListener("click", smoothScrollBackToTop);
