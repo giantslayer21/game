@@ -6,6 +6,7 @@ const line3 =document.querySelector('.line3');
 const x =document.querySelector('.x');
 const scrollToTop =document.querySelector('.scroll-to-top');
 const navlinks =document.querySelector('.nav-links');
+const login= document.querySelector('.login')
 const logo= document.querySelector('.logo img')
 const links = document.querySelectorAll('.nav-links li');
 
@@ -19,6 +20,7 @@ hamburger.addEventListener('click',()=>{
     links.forEach(link =>{
         link.classList.toggle('fade');
     });
+    login.classList.toggle('fade');
 });
 
 

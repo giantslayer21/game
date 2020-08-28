@@ -1,0 +1,75 @@
+<head>
+    <style>
+        body{
+  background-color: #314867;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+div.container{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button.btn{
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding: 25px 80px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  margin: 15px 30px;
+  -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+
+button.btn-1:hover{
+  background-color: white;
+  color: black;
+  -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+button.btn-2{
+  overflow: hidden;
+}
+
+button.btn-2:hover{
+  color: black;
+}
+
+
+button.btn-2:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+}
+button.btn-2:hover:after,
+button.btn-2:active:after {
+    width: 100%;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+      <button class="btn btn-1">Submit</button>
+      <button class="btn btn-2">Submit</button>
+    </div>
+</body>

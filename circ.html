@@ -4,132 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <style>
-
-.circular-menu {
-  position: fixed;
-  bottom: 1em;
-  right: 1em;
-}
-
-.circular-menu .floating-btn {
-  display: block;
-  width: 3.5em;
-  height: 3.5em;
-  border-radius: 50%;
-  background-color: #333533;
-  box-shadow: 0 2px 5px 0 hsla(0, 0%, 0%, .26);  
-  color: hsl(0, 0%, 100%);
-  text-align: center;
-  line-height: 3.9;
-  cursor: pointer;
-  outline: 0;
-}
-
-.circular-menu.active .floating-btn {
-  box-shadow: inset 0 0 3px hsla(0, 0%, 0%, .3);
-}
-
-.circular-menu .floating-btn:active {
-  box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, .4);
-}
-
-.circular-menu .floating-btn i {
-  font-size: 1.3em;
-  transition: transform .2s;  
-}
-
-.circular-menu.active .floating-btn i {
-  transform: rotate(-45deg);
-}
-
-.circular-menu:after {
-  display: block;
-  content: ' ';
-  width: 3.5em;
-  height: 3.5em;
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -2;
-  background-color:#CFDBD5;
-  transition: all .3s ease;
-}
-
-.circular-menu.active:after {
-  transform: scale3d(5.5, 5.5, 1);
-  transition-timing-function: cubic-bezier(.68, 1.55, .265, 1);
-}
-
-.circular-menu .items-wrapper {
-  padding: 0;
-  margin: 0;
-}
-
-.circular-menu .menu-item {
-  position: absolute;
-  top: .2em;
-  right: .2em;
-  z-index: -1;
-  display: block;
-  text-decoration: none;
-  color: hsl(0, 0%, 100%);
-  font-size: 1em;
-  width: 3em;
-  height: 3em;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 3;
-  background-color: hsla(0,0%,0%,.1);
-  transition: transform .3s ease, .2s ease;
-}
-
-.circular-menu .menu-item:hover {
-  background-color: hsla(0,0%,0%,.3);
-}
-
-.circular-menu.active .menu-item {
-  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.circular-menu.active .menu-item:nth-child(1) {
-  transform: translate3d(1em,-7em,0);
-}
-
-.circular-menu.active .menu-item:nth-child(2) {
-  transform: translate3d(-3.5em,-6.3em,0);
-}
-
-.circular-menu.active .menu-item:nth-child(3) {
-  transform: translate3d(-6.5em,-3.2em,0);
-}
-
-.circular-menu.active .menu-item:nth-child(4) {
-  transform: translate3d(-7em,1em,0);
-}
-
-
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/menu.css">
+  <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-  <div>hi</div>
-  
-
-  <div id="circularMenu" class="circular-menu">
-
-    <a class="floating-btn" onclick="document.getElementById('circularMenu').classList.toggle('active');">
-      <i class="fa fa-plus"></i>
-    </a>
-  
-    <menu class="items-wrapper">
-      <a href="#" class="menu-item fa fa-facebook">Home</a>
-      <a href="#" class="menu-item fa fa-twitter">About</a>
-      <a href="#" class="menu-item fa fa-google-plus">Play</a>
-      <a href="#" class="menu-item fa fa-linkedin">Login</a>
-    </menu>
-  
-  </div>
+  <header>
+    <div class="nav-buttons">
+      <div class="scroll-to-top">
+        <img src="images/up.svg" alt="up icon">
+        <span>Scroll</span>
+      </div>
+      <div class="hamburger">
+        <div class="x">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html" class="logo"><img src="images/logo.svg" alt="unshift logo"></a>
+      <ul class="nav-links">
+        <li><a href="circ.html">PLAY</a></li>
+        <li><a href="simply.html" class="active">ABOUT</a></li>
+        <li><a href="#">SIGNUP</a></li>
+        <a class="login" href="#">LOGIN</a>
+      </ul>
+    </nav>
+  </header>
+  <section style="height: 200vh;">
+  </section>
+  <script src="javascript/menu.js"></script>
 </body>
 </html>
 
