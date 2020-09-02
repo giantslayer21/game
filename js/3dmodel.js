@@ -17,11 +17,11 @@ function main() {
     renderer = new THREE.WebGLRenderer({canvas,antialias:true});
     // document.body.appendChild( renderer.domElement );
     camera = new THREE.PerspectiveCamera(60, canvas.clientWidth / canvas.clientHeight, 1, 1000);    
-    camera.position.z = 130;
+    camera.position.z = 140;
 
     scene = new THREE.Scene();
     scene.background = new THREE.Color(0xEDEDED);
-    scene.fog = new THREE.FogExp2( 0xe8eddf, 0.002 );
+    // scene.fog = new THREE.FogExp2( 0xe8eddf, 0.002 );
     // var axesHelper = new THREE.AxesHelper( 100 ); scene.add( axesHelper );
 
     controls = new OrbitControls( camera, renderer.domElement );  
@@ -29,10 +29,10 @@ function main() {
     controls.dampingFactor = 0.05;
     controls.autoRotate = true;
     controls.autoRotateSpeed =-2;
-    // controls.screenSpacePanning = false;
+    controls.screenSpacePanning = true;
     controls.enableZoom=false;
-    // controls.minDistance = 100;
-    // controls.maxDistance = 500;
+    controls.minDistance = 100;
+    controls.maxDistance = 500;
     controls.maxPolarAngle = Math.PI / 2.5;
     // controls.minPolarAngle = Math.PI / 2;
 

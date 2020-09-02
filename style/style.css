@@ -51,7 +51,10 @@ main{
   margin: 10px 0px 5px 0px;
   animation: swipe 0.8s infinite alternate;
 }
-
+.more span{
+  font-weight: bold;
+  font-size: 12px;
+}
 .more.fade{
   opacity: 0;
 }
@@ -73,13 +76,20 @@ main{
 }
 
 @media screen and (max-width: 1220px){
-  .more{
-    font-size: 12px;
-  }
-  .desktop{
-    display: none;
-  }
-  .mobile{
-    display: block;
-  }
+  
+#c{
+  position: absolute;
+  z-index: -1;
+  /* background-color: ivory; */
+}
+.more span{
+  font-size: 10px;
+  font-weight: bolder;
+}
+.desktop{
+  display: none;
+}
+.mobile{
+  display: block;
+}
 }
