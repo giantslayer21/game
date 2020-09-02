@@ -77,11 +77,10 @@ main{
 
 @media screen and (max-width: 1220px){
   
-#c{
+/* #c{
   position: absolute;
   z-index: -1;
-  /* background-color: ivory; */
-}
+} */
 .more span{
   font-size: 10px;
   font-weight: bolder;
