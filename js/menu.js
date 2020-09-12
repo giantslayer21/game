@@ -7,8 +7,10 @@ const x =document.querySelector('.x');
 const scrollToTop =document.querySelector('.scroll-to-top');
 const navlinks =document.querySelector('.nav-links');
 const login= document.querySelector('.login');
+const nav= document.querySelector('nav');
 const logo= document.querySelector('.logo img');
 const links = document.querySelectorAll('.nav-links li');
+// const navbuttons = document.querySelectorAll('.nav-buttons');
 
 hamburger.addEventListener('click',()=>{
     navlinks.classList.toggle('open');
@@ -31,14 +33,17 @@ const more= document.querySelector('.more');
 window.addEventListener("scroll", scrollFunction);
 
 function scrollFunction() {
+ 
     if (window.pageYOffset > 40) { // Show scrollToTop
         logo.classList.add('small');
+        nav.classList.add('small');
         more.classList.add('fade');
       }
-      else { // Hide scrollToTop
-        logo.classList.remove('small');
-        more.classList.remove('fade');
-      }
+    else { // Hide scrollToTop
+      nav.classList.remove('small');
+      logo.classList.remove('small');
+      more.classList.remove('fade');
+    }
     if (window.pageYOffset > 300) { // Show scrollToTop
         scrollToTop.classList.add('fade');
         // scrollToTop.style.display = "block";
@@ -76,6 +81,17 @@ function easeInOutCubic(t, b, c, d) {
 	return c/2*(t*t*t + 2) + b;
 };
 
-
-
-
+window.onscroll = function(ev) {
+  if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight-20) {
+    // alert("you're at the bottom of the page");
+    // hamburger.style.display="none";
+    hamburger.classList.add('hide');
+    scrollToTop.classList.add('hide');
+  }
+  else{
+    hamburger.classList.remove('hide');
+    scrollToTop.classList.remove('hide');
+        // navbuttons.style.display="block";
+    // navbuttons.classList.remove('fade');
+  }
+};

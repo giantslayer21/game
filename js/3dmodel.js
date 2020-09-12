@@ -17,7 +17,7 @@ function main() {
     renderer = new THREE.WebGLRenderer({canvas,antialias:true});
     // document.body.appendChild( renderer.domElement );
     camera = new THREE.PerspectiveCamera(60, canvas.clientWidth / canvas.clientHeight, 1, 1000);    
-    camera.position.z = 140;
+    camera.position.z = 160;
 
     scene = new THREE.Scene();
     scene.background = new THREE.Color(0xEDEDED);
@@ -25,15 +25,15 @@ function main() {
     // var axesHelper = new THREE.AxesHelper( 100 ); scene.add( axesHelper );
 
     controls = new OrbitControls( camera, renderer.domElement );  
-    controls.enableDamping = true; // an animation loop is required when either damping or auto-rotation are enabled
-    controls.dampingFactor = 0.05;
+    // controls.enableDamping = true; // an animation loop is required when either damping or auto-rotation are enabled
+    // controls.dampingFactor = 0.05;
     controls.autoRotate = true;
     controls.autoRotateSpeed =-2;
-    controls.screenSpacePanning = true;
-    controls.enableZoom=false;
-    controls.minDistance = 100;
-    controls.maxDistance = 500;
-    controls.maxPolarAngle = Math.PI / 2.5;
+    // controls.screenSpacePanning = true;
+    // controls.enableZoom=false;
+    // controls.minDistance = 100;
+    // controls.maxDistance = 500;
+    // controls.maxPolarAngle = Math.PI / 2.5;
     // controls.minPolarAngle = Math.PI / 2;
 
     //....LIGHTS....
