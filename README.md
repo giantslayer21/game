@@ -1,2 +1,2 @@
 # game
-making a game using threejs
+An amazing game website made using three.js.
