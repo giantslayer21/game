@@ -81,17 +81,17 @@ function easeInOutCubic(t, b, c, d) {
 	return c/2*(t*t*t + 2) + b;
 };
 
-window.onscroll = function(ev) {
-  if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight-20) {
-    // alert("you're at the bottom of the page");
-    // hamburger.style.display="none";
-    hamburger.classList.add('hide');
-    scrollToTop.classList.add('hide');
-  }
-  else{
-    hamburger.classList.remove('hide');
-    scrollToTop.classList.remove('hide');
-        // navbuttons.style.display="block";
-    // navbuttons.classList.remove('fade');
-  }
-};
+// window.onscroll = function(ev) {
+//   if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight-20) {
+//     // alert("you're at the bottom of the page");
+//     // hamburger.style.display="none";
+//     hamburger.classList.add('hide');
+//     scrollToTop.classList.add('hide');
+//   }
+//   else{
+//     hamburger.classList.remove('hide');
+//     scrollToTop.classList.remove('hide');
+//         // navbuttons.style.display="block";
+//     // navbuttons.classList.remove('fade');
+//   }
+// };
