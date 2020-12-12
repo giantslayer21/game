@@ -34,12 +34,12 @@ window.addEventListener("scroll", scrollFunction);
 
 function scrollFunction() {
  
-    if (window.pageYOffset > 40) { // Show scrollToTop
+    if (window.pageYOffset > 40) { // Make logo small and change nav colour
         logo.classList.add('small');
         nav.classList.add('small');
         more.classList.add('fade');
       }
-    else { // Hide scrollToTop
+    else { // make logo normal
       nav.classList.remove('small');
       logo.classList.remove('small');
       more.classList.remove('fade');
